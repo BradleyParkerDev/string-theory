@@ -117,8 +117,21 @@ console.log("--------------------------------------------------\n");
 
 //reverse
 console.log("7. reverse\n");
+myString = "colin";
+myString2 = "mesuara";
+
+function reverse(str){
+    let newString = '';
+    for(let i = (str.length - 1); i >= 0; i--){
+        newString = newString + str[i]
+    }
+    return  newString;
+}
+console.log(reverse(myString));
+console.log(reverse(myString2));
 
 console.log("--------------------------------------------------\n");
+
 //onlyVowels
 console.log("8. onlyVowels\n");
 
