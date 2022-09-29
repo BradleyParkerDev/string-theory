@@ -129,10 +129,44 @@ function reverse(str){
 }
 console.log(reverse(myString));
 console.log(reverse(myString2));
-
 console.log("--------------------------------------------------\n");
 
 //onlyVowels
 console.log("8. onlyVowels\n");
+const v1 = 'a';
+const v2 = 'e';
+const v3 = 'i';
+const v4 = 'o';
+const v5 = 'u';
 
+myString = "colin jaffe";
+myString2 = "Anthony DeRosa";
+let myString3 = "quickly";
+function onlyVowels(str){
+    let newString = '';
+    let char = '';
+    for(let i = 0; i < str.length; i ++){
+        char = str[i];
+        if(char.toLowerCase() === v1.toLowerCase()){
+            newString = newString + char;
+        }
+        else if(char.toLowerCase() === v2.toLowerCase()){
+            newString = newString + char;
+        }
+        else if(char.toLowerCase() === v3.toLowerCase()){
+            newString = newString + char;
+        }
+        else if(char.toLowerCase() === v4.toLowerCase()){
+            newString = newString + char;
+        }
+        else if(char.toLowerCase() === v5.toLowerCase()){
+            newString = newString + char;
+        }
+    }
+
+    return newString;
+}
+console.log(onlyVowels(myString));
+console.log(onlyVowels(myString3));
+console.log(onlyVowels(myString2));
 console.log("--------------------------------------------------\n");
